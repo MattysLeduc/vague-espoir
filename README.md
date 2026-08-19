@@ -2,6 +2,8 @@
 
 Site web de **La vague d'espoir** — une nage d'endurance de **24 heures en eau libre, en solo**, réalisée par Marie-Laurence pour sensibiliser la population aux maladies mentales et amasser des fonds pour la recherche et le soutien en santé mentale.
 
+Construit avec **Next.js 15** (App Router, TypeScript, React 19).
+
 ## Contenu du site
 
 - **Le défi** — la nage de 24 heures, ses règles et sa mission
@@ -12,19 +14,27 @@ Site web de **La vague d'espoir** — une nage d'endurance de **24 heures en eau
 - **Témoigner** — partager son histoire pour briser les tabous
 - **Bénévoles** — s'impliquer dans l'événement
 
-## Structure
-
-- `index.html` — le site complet (HTML/CSS/JS, aucune dépendance à installer)
-- `images/` — photos optimisées pour le web
-- `Converted Text.md` — contenu source original
-
-## Lancer le site
-
-Ouvrir `index.html` dans un navigateur, ou servir le dossier :
+## Développement local
 
 ```bash
-python -m http.server 8000
+npm install
+npm run dev
 ```
+
+Le site est disponible sur [http://localhost:3000](http://localhost:3000).
+
+## Déploiement sur Vercel
+
+1. Aller sur [vercel.com/new](https://vercel.com/new)
+2. Importer le dépôt GitHub `vague-espoir`
+3. Vercel détecte Next.js automatiquement — cliquer **Deploy** (aucune configuration requise)
+
+## Structure
+
+- `app/` — layout, page principale et styles globaux
+- `components/` — sections du site (Hero, Défi, Journey interactif, etc.)
+- `public/images/` — photos optimisées pour le web
+- `Converted Text.md` — contenu source original
 
 ## Contact
 
